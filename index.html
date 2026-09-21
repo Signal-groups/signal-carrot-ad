@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;800;900&amp;display=swap" rel="stylesheet">
   <style>
-    *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:28px;background:#edf1f5;color:#172337;font-family:"Noto Sans KR",sans-serif}.panel{width:min(100%,720px);padding:38px;border-radius:14px;background:#fff;box-shadow:0 18px 48px rgba(24,58,93,.13)}.eyebrow{margin:0;color:#2d67a2;font-size:13px;font-weight:900;letter-spacing:.14em}.panel h1{margin:8px 0 7px;font-size:34px;letter-spacing:-.05em}.panel>p{margin:0;color:#66758a}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:27px}.grid a{display:flex;align-items:center;justify-content:space-between;min-height:72px;padding:0 19px;border:1px solid #dce5ee;border-radius:9px;background:#f8fafc;font-weight:900;text-decoration:none;color:#183a5d;transition:.18s}.grid a:hover{border-color:#2d67a2;background:#eaf3fb;transform:translateY(-1px)}.grid span{color:#ec1d4f}@media(max-width:540px){.panel{padding:28px 20px}.panel h1{font-size:28px}.grid{grid-template-columns:1fr}}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:28px;background:#edf1f5;color:#172337;font-family:"Noto Sans KR",sans-serif}.panel{width:min(100%,720px);padding:38px;border-radius:14px;background:#fff;box-shadow:0 18px 48px rgba(24,58,93,.13)}.eyebrow{margin:0;color:#2d67a2;font-size:13px;font-weight:900;letter-spacing:.14em}.panel h1{margin:8px 0 7px;font-size:34px;letter-spacing:-.05em}.panel>p{margin:0;color:#66758a}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:27px}.grid a{display:flex;align-items:center;justify-content:space-between;min-height:72px;padding:0 19px;border:1px solid #dce5ee;border-radius:9px;background:#f8fafc;font-weight:900;text-decoration:none;color:#183a5d;transition:.18s}.grid a:hover{border-color:#2d67a2;background:#eaf3fb;transform:translateY(-1px)}.grid span{color:#ec1d4f}.grid .nationwide{grid-column:1/-1;border-color:#b9cee2;background:#eaf3fb;color:#102b48}.grid .nationwide strong{display:block;color:#2d67a2;font-size:12px;letter-spacing:.06em}@media(max-width:540px){.panel{padding:28px 20px}.panel h1{font-size:28px}.grid{grid-template-columns:1fr}.grid .nationwide{grid-column:auto}}
   </style>
 </head>
 <body>
@@ -19,6 +19,7 @@
     <h1>지역별 광고 URL</h1>
     <p>확인할 지역을 선택하세요.</p>
     <nav class="grid" aria-label="지역별 광고 페이지">
+      <a class="nationwide" href="./all/"><span><strong>NATIONWIDE</strong>전국</span><span>→</span></a>
       <a href="./wj/">강원 원주 <span>→</span></a>
       <a href="./cc/">강원 춘천 <span>→</span></a>
       <a href="./ic/">경기 이천 <span>→</span></a>

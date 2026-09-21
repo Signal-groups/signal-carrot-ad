@@ -3,6 +3,7 @@
 
   const ENDPOINT = 'https://script.google.com/macros/s/AKfycbxSI6a82YhBdLoE3lekYihAt2B-MU0bwFUQM5qOb9Lwn8IquOjpa2sdn9SahPjkEics/exec';
   const REGIONS = {
+    all: { label: '전국', short: '전국' },
     wj: { label: '강원 원주', short: '원주' },
     cc: { label: '강원 춘천', short: '춘천' },
     ic: { label: '경기 이천', short: '이천' },
@@ -10,7 +11,7 @@
     sn: { label: '경기 성남', short: '성남' }
   };
   const pathParts = location.pathname.split('/').filter(Boolean);
-  const regionCode = [...pathParts].reverse().find(part => REGIONS[part]) || 'wj';
+  const regionCode = [...pathParts].reverse().find(part => REGIONS[part]) || 'all';
   const region = REGIONS[regionCode];
 
   document.title = `${region.label} 시니어케어 컨설턴트 특별 채용 | (주)시그널그룹`;
