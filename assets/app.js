@@ -80,6 +80,7 @@
     const query = new URLSearchParams(location.search);
     const payload = {
       schema_version: '1.0',
+      formType: 'recruit',
       page_id: `recruit-signal-carrot-${regionCode}`,
       page_type: 'RECRUIT',
       platform: query.get('utm_source') || 'daangn',
@@ -97,6 +98,7 @@
       landing_url: location.href,
       referrer: document.referrer,
       brand: '(주)시그널그룹',
+      advisor: '배진우',
       telegramTitle: `[(주)시그널그룹] ${region.label} 시니어케어 컨설턴트 지원`
     };
 
