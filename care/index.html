@@ -80,7 +80,7 @@
         var email=form.email.value.trim();
         var interest=form.interest.value;
         var downloadPayload={name:name,phone:phoneNumber,email:email,interest:interest,consent:document.getElementById('consent').checked,company:form.company.value,startedAt:Number(form.startedAt.value),source:source,campaign:campaign,region:region};
-        var centralPayload={schema_version:'1.0',page_id:'signal-care-guide',page_type:'LANDING',platform:source,campaign_code:campaign,content_code:'초고령화 시대 돌봄비 준비 무료자료',customer_name:name,name:name,phone:phoneNumber,email:email,region:region,privacy_agreed:true,request_type:'consult',formType:'consult',consultation_type:interest,memo:'초고령화 시대 돌봄비 준비 무료 PDF 신청',landing_page:location.pathname,landing_url:location.href,referrer:document.referrer,brand:'(주)시그널그룹',advisor:'배진우',extra_email:'jinwoo8506@gmail.com',telegramTitle:'[(주)시그널그룹] '+region+' 돌봄비 무료자료 신청'};
+        var centralPayload={schema_version:'3.0',intake_type:'senior_db',project_type:'senior',lead_type:'db',source_code:'BJW-SENIOR-DB-001',page_id:'signal-care-guide',page_type:'LANDING',platform:source,campaign_code:campaign,content_code:'초고령화 시대 돌봄비 준비 무료자료',customer_name:name,name:name,phone:phoneNumber,email:email,region:region,ad_region:region,privacy_agreed:true,request_type:'consult',formType:'consult',consultation_type:interest,memo:'초고령화 시대 돌봄비 준비 무료 PDF 신청',landing_page:location.pathname,landing_url:location.href,referrer:document.referrer,brand:'(주)시그널그룹',advisor:'배진우',extra_email:'jinwoo8506@gmail.com',telegramTitle:'[(주)시그널그룹] '+region+' 돌봄비 무료자료 신청'};
         btn.disabled=true;
         btn.textContent='신청 내용을 저장하고 있습니다';
         try{

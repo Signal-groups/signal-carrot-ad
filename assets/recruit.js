@@ -74,12 +74,16 @@
     const query = new URLSearchParams(location.search);
     const timestamp = new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' });
     const payload = {
-      schema_version: '2.0',
+      schema_version: '3.0',
+      intake_type: 'senior_consultant',
+      project_type: 'senior',
+      lead_type: 'consultant',
+      source_code: 'BJW-SENIOR-CONSULTANT-001',
       formType: 'recruit',
       page_id: `signal-open-recruit-${regionCode}`,
       page_type: 'RECRUIT',
-      platform: query.get('utm_source') || 'daangn',
-      campaign_code: query.get('utm_campaign') || `signal-open-recruit-${regionCode}`,
+      platform: query.get('source') || query.get('utm_source') || 'daangn',
+      campaign_code: query.get('campaign') || query.get('utm_campaign') || `signal-open-recruit-${regionCode}`,
       content_code: query.get('utm_content') || '시니어케어 전문 컨설턴트 공개채용',
       timestamp,
       createdAt: new Date().toISOString(),
@@ -87,6 +91,7 @@
       customer_name: name,
       phone: phoneNumber,
       region: region.label,
+      ad_region: region.label,
       loc: region.label,
       exp: '공개채용 상담 신청',
       memo: '시니어케어 전문 컨설턴트 공개채용 상담 신청',
