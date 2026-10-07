@@ -7,7 +7,7 @@
     wj: { label: '강원 원주', short: '원주' },
     cc: { label: '강원 춘천', short: '춘천' },
     ic: { label: '경기 이천', short: '이천' },
-    yj: { label: '경기 여주', short: '여주' },
+    yj: { label: '경기 여주', short: '여주', sourceCode: 'SGN-YJ-CONSULTANT-001' },
     sn: { label: '경기 성남', short: '성남' }
   };
   const pathParts = location.pathname.split('/').filter(Boolean);
@@ -83,7 +83,7 @@
       intake_type: 'senior_consultant',
       project_type: 'senior',
       lead_type: 'consultant',
-      source_code: 'BJW-SENIOR-CONSULTANT-001',
+      source_code: region.sourceCode || 'BJW-SENIOR-CONSULTANT-001',
       formType: 'recruit',
       page_id: `recruit-signal-carrot-${regionCode}`,
       page_type: 'RECRUIT',
