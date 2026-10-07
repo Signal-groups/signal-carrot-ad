@@ -7,7 +7,7 @@
     wj: { label: '강원 원주', short: '원주' },
     cc: { label: '강원 춘천', short: '춘천' },
     ic: { label: '경기 이천', short: '이천' },
-    yj: { label: '경기 여주', short: '여주', notifyEmail: 'lsh20046957@gmail.com' },
+    yj: { label: '경기 여주', short: '여주' },
     sn: { label: '경기 성남', short: '성남' }
   };
   const pathParts = location.pathname.split('/').filter(Boolean);
@@ -93,7 +93,6 @@
       customer_name: customerName,
       phone: phoneNumber,
       region: region.label,
-      notify_email: region.notifyEmail || '',
       ad_region: region.label,
       privacy_agreed: true,
       request_type: 'recruit',
