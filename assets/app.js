@@ -6,7 +6,7 @@
     all: { label: '전국', short: '전국' },
     wj: { label: '강원 원주', short: '원주' },
     cc: { label: '강원 춘천', short: '춘천' },
-    ic: { label: '경기 이천', short: '이천' },
+    ic: { label: '경기 이천', short: '이천', sourceCode: 'SGN-IC-CONSULTANT-001' },
     yj: { label: '경기 여주', short: '여주', sourceCode: 'SGN-YJ-CONSULTANT-001' },
     sn: { label: '경기 성남', short: '성남' }
   };
